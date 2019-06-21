@@ -55,16 +55,27 @@ Branching in Git is essentially used to seperate developmental paths without ove
 
 ### Section 3: Pushing onto GitHub
 
-### Section: Misc
+* **Difference between Cloning, Forking and Downloading**: Forking means copying a repo on github itself. Cloning means pulling a git repo locally as a new directory. Note that `.git` folder will already be there while cloning. When you download the repo it just gives you all the source files with no .git so you dont have the repo. When you clone you get a copy of the history and it is a functional git repo [source][6].
+
+### Section 4: Git + GitHub
+1. **Connecting a local direcory to a git repo on GitHub**: See the docs.
+2. **Initializing git repo on GitHub and then connecting it locally**: See the docs.
+
+
+### Section 5: Misc
 
 * `git log --graph --oneline --decorate`: Nice visualisation of branching tree.
 
 ## Useful resources/links
 1. [Exhaustive documentation][1]
 2. [Some common mistakes and solutions][2]
+3. [Excellent resource for Git brnaching visualisation and log-details][5]
 
 
 [1]: https://devdocs.io/git/
 [2]: https://about.gitlab.com/2018/08/08/git-happens/
 [3]: https://www.youtube.com/watch?v=o1nHIbRLMHQ
 [4]: https://dev.to/neshaz/when-to-use-git-reset-git-revert--git-checkout-18je
+[5]: https://www.atlassian.com/git/tutorials/git-log
+[6]: https://stackoverflow.com/questions/31977306/difference-between-cloning-and-downloading
+
