@@ -53,9 +53,11 @@ Branching in Git is essentially used to seperate developmental paths without ove
 * `git checkout -b test_branch`: Equivalent to `git branch test_branch` + `git checkout test_branch`
 * `git merge`: Read more in docs. Need careful attention.
 
-### Misc
+### Section 3: Pushing onto GitHub
 
-* `git log --graph --oneline --decorate`
+### Section: Misc
+
+* `git log --graph --oneline --decorate`: Nice visualisation of branching tree.
 
 ## Useful resources/links
 1. [Exhaustive documentation][1]
