@@ -5,6 +5,8 @@ I will be using this to test anything I would want to test before actually apply
 
 ## Frequently used commands
 
+### Section 1: Basics
+
 * `git init`: Initializing your local directory as a git repository 
 	* Usage: `git init` inside your local directory in the terminal.
 	* Comment(s) : Adds a `.git` folder inside the directory. This keeps entire track of your repo.
@@ -36,12 +38,22 @@ I will be using this to test anything I would want to test before actually apply
 * `git reset`: Resets and sets up HEAD to one of the previous commits.
 	* Usage:
 		1. `git reset --hard commit_old`: Throws away all the commits between `commit_curr` and `commit_old` and sets the HEAD to point to `commit_old`. This current branch will get updated to end on `commit_old` instead of `commit_curr`.
+		2. `--soft`: Tells Git to reset HEAD to another commit, so index and the working directory will not be altered in any way. All of the files changed between the original HEAD and the commit will be staged.
+		3. `--mixed`: Just like the soft, this will reset HEAD to another commit. It will also reset the index to match it while working directory will not be touched. All the changes will stay in the working directory and appear as modified, but not staged. >The main difference between --mixed and --soft is whether or not your index is also modified. Check more on git-reset-guide.
+	* Comment(s): `reset`, `revert`, `checkout` have kind of similar functionalities with subtle changes. This [link][4] has a decent comparison of when to use which. 
+* `.gitignore`: Create a file `.gitignore` and input manually the names of each of the lines you do not want to commit everytime probably because these are data files or these keep on changing (log files) everytime you do anything. When you do a `git add .`, the file names you have in `.gitignore` will not be added to that staged area. You can add directoried, let's say `logDir/` here as well  by adding `logDir/*` to `.gitignore`.
 
-### Useful resources/links
-1. [Exhaustive documentation](https://devdocs.io/git/)
-2. [Some common mistakes and solutions](https://about.gitlab.com/2018/08/08/git-happens/) 
+
+### Section 2: Branching in Git
+
+Branching in Git is essentially used to seperate developmental paths without overriding project progress. For example, let's say we are working on the Anthropometry project with the repo called `pytorchHMR`. Apart from master branch, let's say we want a branch called `bug-fixing` on which Alice is going to work on and another branch `experiment-modified-HMR` on which Bob is going to work on. Now both Alice and Bob can build on the master branch and work on their own goals independently. Once they are done, we can merge all the branches into the master branch.
+
+## Useful resources/links
+1. [Exhaustive documentation][1]
+2. [Some common mistakes and solutions][2]
 
 
 [1]: https://devdocs.io/git/
 [2]: https://about.gitlab.com/2018/08/08/git-happens/
 [3]: https://www.youtube.com/watch?v=o1nHIbRLMHQ
+[4]: https://dev.to/neshaz/when-to-use-git-reset-git-revert--git-checkout-18je

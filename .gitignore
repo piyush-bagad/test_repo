@@ -1,0 +1,8 @@
+# Log files
+file3.txt
+
+# Static files
+data_file.txt
+
+# Log directories
+logDir/*
