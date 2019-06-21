@@ -25,7 +25,11 @@ I will be using this to test anything I would want to test before actually apply
 	* Usage: `git commit -m "Add a name to this commit."`
 		1. `git commit --amend`: In case you have modified some of the files after committing and now you want to add those modifications to the same commit with a modified message. Using the previous command will open the previous message in interactive mode that you can edit. You can use `git commit --amend -m "Modified message"` to directly instruct it to modify the message. You can use `git commit --amend --no-edit` for amending without changing the commit message.
 	* Comment(s): Use `git commit --help` to see documentation. You should definitely look at the documentation given [here][1].
-* `git checkout`: Make the HEAD point to a particular previous commit. It is like going back in time when you had made a specific commit.
+* `git checkout`: Make the HEAD point to a particular previous commit. It is like temporarily going back in time when you had made a specific commit.
+	* Usage:
+		1. `git checkout commit_id`: Sets your HEAD to the commit `commit_id`, _i.e._ it will take your repo to that stage while you had committed `commit_id`.
+		2. If you want to experiment around with commit `commit_id`, you can do so. When that is done, if you want to revert back to the `master` branch, use `git checkout master`.
+		3. `git checkout` can be used with branches, but that is a bit more complex and skipped for now.
 
 ### Useful resources/links
 1. [Exhaustive documentation](https://devdocs.io/git/)
