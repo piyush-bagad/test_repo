@@ -48,6 +48,15 @@ I will be using this to test anything I would want to test before actually apply
 
 Branching in Git is essentially used to seperate developmental paths without overriding project progress. For example, let's say we are working on the Anthropometry project with the repo called `pytorchHMR`. Apart from master branch, let's say we want a branch called `bug-fixing` on which Alice is going to work on and another branch `experiment-modified-HMR` on which Bob is going to work on. Now both Alice and Bob can build on the master branch and work on their own goals independently. Once they are done, we can merge all the branches into the master branch.
 
+* `git branch -a`: Lists all branches and shows a `*` ahead of the current branch on which HEAD resides.
+* `git branch test_branch`: Created a new branch from your current position of HEAD. You will need to `checkout` to the new branch in order to set the HEAD position to the new branch.
+* `git checkout -b test_branch`: Equivalent to `git branch test_branch` + `git checkout test_branch`
+* `git merge`: Read more in docs. Need careful attention.
+
+### Misc
+
+* `git log --graph --oneline --decorate`
+
 ## Useful resources/links
 1. [Exhaustive documentation][1]
 2. [Some common mistakes and solutions][2]
