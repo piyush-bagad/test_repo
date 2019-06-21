@@ -51,6 +51,7 @@ Branching in Git is essentially used to seperate developmental paths without ove
 * `git branch -a`: Lists all branches and shows a `*` ahead of the current branch on which HEAD resides.
 * `git branch test_branch`: Created a new branch from your current position of HEAD. You will need to `checkout` to the new branch in order to set the HEAD position to the new branch.
 * `git checkout -b test_branch`: Equivalent to `git branch test_branch` + `git checkout test_branch`
+* `git merge`: Read more in docs. Need careful attention.
 
 ### Misc
 
