@@ -1,3 +1,5 @@
 This is a testing file.
 
 I made some changes
+
+=> I added this line and will make a new commit. I will checkout to previous commit to check if this line gets disappeared or not!
