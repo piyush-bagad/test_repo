@@ -57,6 +57,14 @@ Branching in Git is essentially used to seperate developmental paths without ove
 
 * **Difference between Cloning, Forking and Downloading**: Forking means copying a repo on github itself. Cloning means pulling a git repo locally as a new directory. Note that `.git` folder will already be there while cloning. When you download the repo it just gives you all the source files with no .git so you dont have the repo. When you clone you get a copy of the history and it is a functional git repo [source][6].
 
+* If you want to push a newly created local branch `newBranch`, we cannot directly use `git push -u origin newBranch`. Here is the error and the coressponding solution.
+```
+fatal: The current branch newBranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin newBranch
+```
+
 ### Section 4: Git + GitHub
 1. **Connecting a local direcory to a git repo on GitHub**: See the docs.
 2. **Initializing git repo on GitHub and then connecting it locally**: See the docs.
