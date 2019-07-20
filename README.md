@@ -79,6 +79,31 @@ To push the current branch and set the remote as upstream, use
 2. [Some common mistakes and solutions][2]
 3. [Excellent resource for Git brnaching visualisation and log-details][5]
 
+## General
+
+### Directory Structure
+This section describes the general directory structure I maintain in my local system for a particular project.
+```
+sample-project/
+├── code
+│   ├── my_repos
+│   │   └── repo1
+│   └── other_repos
+│       └── repo1
+├── data
+│   ├── sample_dataset
+│   └── synthetic
+│       ├── input_data
+│       └── output_data
+└── reading
+    └── topic1
+        ├── books
+        ├── others
+        └── papers
+
+15 directories, 0 files
+```
+
 
 [1]: https://devdocs.io/git/
 [2]: https://about.gitlab.com/2018/08/08/git-happens/
