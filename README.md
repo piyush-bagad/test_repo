@@ -103,7 +103,13 @@ sample-project/
 
 15 directories, 0 files
 ```
+### Alternatives to zipping
 
+1. `7-zip`
+
+### Alternatives to wget
+
+1. `aria`
 
 [1]: https://devdocs.io/git/
 [2]: https://about.gitlab.com/2018/08/08/git-happens/
